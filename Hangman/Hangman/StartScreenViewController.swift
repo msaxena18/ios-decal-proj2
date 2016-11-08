@@ -10,6 +10,10 @@ import UIKit
 
 class StartScreenViewController: UIViewController {
 
+    @IBOutlet var gameTitle: UILabel!
+    @IBAction func goToGame(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "game", sender: sender)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
